@@ -122,11 +122,13 @@ header .header__container .clear i {
   border: none;
 }
 
-.content ul li .fa-circle:hover {
+.content ul li .fa-circle:hover,
+.content ul li .fa-check-circle:focus {
   color: green;
 }
 
-.content ul li .fa-circle:focus {
+.content ul li .fa-circle:focus,
+.content ul li .fa-trash-alt:focus {
   color: #000 !important;
 }
 
@@ -139,12 +141,9 @@ header .header__container .clear i {
   outline: none;
 }
 
-.content ul li .fa-check-circle:hover {
+.content ul li .fa-check-circle:hover,
+.content ul li .fa-trash-alt:hover {
   color: rgb(214, 42, 42);
-}
-
-.content ul li .fa-check-circle:focus{
-  color: green !important;
 }
 
 .content ul li .fa-trash-alt {
@@ -153,14 +152,6 @@ header .header__container .clear i {
   transition: all 0.4s ease;
   border: none;
   outline: none;
-}
-
-.content ul li .fa-trash-alt:hover {
-  color: rgb(214, 42, 42);
-}
-
-.content ul li .fa-trash-alt:focus {
-  color: #000;
 }
 
 .add-to-do {
