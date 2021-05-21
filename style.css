@@ -141,6 +141,10 @@ header .header__container .clear i {
   color: rgb(214, 42, 42);
 }
 
+.content ul li .fa-check-circle:focus{
+  color: green;
+}
+
 .content ul li .fa-trash-alt {
   font-size: 1.5rem;
   cursor: pointer;
@@ -151,6 +155,10 @@ header .header__container .clear i {
 
 .content ul li .fa-trash-alt:hover {
   color: rgb(214, 42, 42);
+}
+
+.content ul li .fa-trash-alt:focus {
+  color: #000;
 }
 
 .add-to-do {
