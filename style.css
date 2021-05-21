@@ -237,22 +237,51 @@ header .header__container .clear i {
   color: #000;
 }
 
-.instruction-text-title{
-  font-size: 3rem;
-  position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  color: #000 !important;
-  line-height: 6rem;
-}
-
 .instruction-text{
+  width: 100%;
+  margin: 0 auto;
   font-size: 2rem;
+  line-height: 4rem;
+  margin-left: 25rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: #000;
-  line-height: 6rem;
+}
+
+@media screen and (max-width: 1400px){
+  .instruction-text{
+    width: 100%;
+    font-size: 2rem;
+    margin-left: 10rem;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .instruction-text{
+    font-size: 1.8rem;
+    margin-left: 8rem;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .instruction-text{
+    font-size: 1.5rem;
+    margin-left: 7rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .instruction-text{
+    font-size: 1.2rem;
+    margin-left: 5rem;
+  }
+}
+
+@media screen and (max-width: 578px){
+  .instruction-text{
+    font-size: 1rem;
+    margin-left: 4rem;
+  }
 }
