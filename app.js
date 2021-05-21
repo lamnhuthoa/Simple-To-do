@@ -4,11 +4,6 @@ const dateElement = document.getElementById('date');
 const list = document.getElementById('list');
 const input = document.getElementById('input');
 
-//Hide / Show Text
-function hideText() {
-    document.getElementById("welcome").classList.add('d-none');
-}
-
 //Classes name
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle";
@@ -145,3 +140,32 @@ list.addEventListener("click", function (event) {
     //add item to localStorage (this code must be added where the LIST array is updated)
     localStorage.setItem("TODO", JSON.stringify(LIST));
 })
+
+//instruction
+function showInstruction(){
+    document.getElementById('closeIn').classList.remove('d-none');
+    document.getElementById("welcome").innerHTML = 
+    `
+    <div style="background: #fff; position: fixed; top: 0; left: 0; height: 100vh; width: 100%; z-index: 99999">
+        <p class="instruction-text">
+            <span class="instruction-text-title">HOW TO USE <i class="fas fa-question"></i></span><br/>
+            &bull; Type your To-do and click <i class="fas fa-plus-circle"></i> or press Enter<br/>
+            &bull; You can also <i class="far fa-check-circle"></i> check or <i class="far fa-circle"></i> uncheck your To-do<br/>
+            &bull; Click the <i class="far fa-trash-alt"></i> button to delete a To-do<br/>
+            &bull; Click the <i class="fas fa-eraser"></i> button to delete the entire list<br/>
+            &bull; The list won't be deleted when you refresh the page
+        </p>
+    
+    </div>
+
+    `
+}
+
+function closeInstruction(){
+    document.getElementById('closeIn').classList.add('d-none');
+    document.getElementById("welcome").innerHTML = 
+    `
+    <div></div>
+
+    `
+}

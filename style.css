@@ -57,7 +57,7 @@ body {
   overflow: hidden;
   position: absolute;
   top: 50%;
-  left: 83.5%;
+  left: 50%;
   transform: translate(-50%, -50%);
 }
 
@@ -201,78 +201,58 @@ header .header__container .clear i {
   overflow: hidden;
 }
 
-@media screen and (min-width: 350px) and (max-width: 992px) {
-  .container {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
-
-  .welcome {
-    z-index: 999;
-    text-align: left;
-    width: 22rem;
-    position: absolute;
-    top: 30%;
-    left: 10%;
-    margin-left: 1rem;
-  }
-  
-  .welcome p:first-child {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 1.5rem;
-    margin-top: 2rem;
-    font-weight: 700;
-  }
-  
-  .welcome p:last-child {
-    color: rgba(0, 0, 0, 0.7);
-    font-size: 0.9rem;
-    line-height: 1.5rem;
-    font-weight: 500;
-  }
+/* INSTRUCTION */
+.showInstruction, .closeInstruction{
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 
-@media screen and (min-width: 992px) and (max-width: 1200px){
-  .container {
-    position: absolute;
-    top: 50%;
-    left: 78%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-  }
+.instruction span{
+  color: #fff;
+}
 
-  .welcome {
-    text-align: left;
-    width: 37rem;
-    position: absolute;
-    left: 1rem;
-    margin-left: 2rem;
-  }
-  
-  .welcome p:first-child {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 2.5rem;
-    margin-top: 2rem;
-  }
-  
-  .welcome p:last-child {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.97rem;
-    line-height: 3rem;
-  }
-  
-  .name {
-    position: absolute;
-    right: 3.5rem;
-    bottom: 0.5rem;
-  }
-  
-  .name h1 {
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1rem;
-  }
+.instruction .fa-bars{
+  color: #fff;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.closeInstruction .fa-window-close{
+  color: #000;
+  font-size: 2rem;
+  margin-right: 0.5rem;
+  cursor: pointer;
+}
+
+.closeInstruction{
+  z-index: 999999;
+}
+
+.closeInstruction span{
+  color: #000;
+}
+
+.instruction-text-title{
+  font-size: 3rem;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #000 !important;
+  line-height: 6rem;
+}
+
+.instruction-text{
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  color: #000;
+  line-height: 6rem;
 }
