@@ -208,7 +208,6 @@ header .header__container .clear i {
   align-items: center;
 }
 
-
 .instruction span{
   color: #fff;
 }
@@ -285,6 +284,7 @@ header .header__container .clear i {
 
   .container {
     max-width: 20rem;
+    height: 34rem;
   }
 
   .add-to-do{
