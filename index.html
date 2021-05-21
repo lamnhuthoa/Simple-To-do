@@ -58,8 +58,10 @@
         </ul>
       </div>
       <div class="add-to-do">
-        <i type="button" class="fas fa-plus-circle" id="addToDo" aria-label="true"></i>
+        <i class="fas fa-plus-circle" id="addToDo" aria-label="true"></i>
         <input
+        onblur="showText()"
+        onclick="hideText()"
           type="text"
           id="input"
           placeholder="Add a to-do"

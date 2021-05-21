@@ -210,18 +210,14 @@ header .header__container .clear i {
     z-index: 1;
   }
 
-  .welcome{
-    display: none;
-  }
-
-  /* .welcome {
+  .welcome {
     z-index: 999;
     text-align: left;
     width: 22rem;
     position: absolute;
     top: 12rem;
     left: 3.5rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
   }
   
   .welcome p:first-child {
@@ -236,7 +232,7 @@ header .header__container .clear i {
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 500;
-  } */
+  }
 }
 
 

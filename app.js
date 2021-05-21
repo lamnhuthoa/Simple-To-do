@@ -4,6 +4,15 @@ const dateElement = document.getElementById('date');
 const list = document.getElementById('list');
 const input = document.getElementById('input');
 
+//Hide / Show Text
+function hideText() {
+    document.getElementById("welcome").classList.add('d-none');
+}
+
+function showText() {
+    document.getElementById("welcome").classList.remove('d-none');
+}
+
 //Classes name
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle";
@@ -55,9 +64,9 @@ function addToDo(toDo, id, done, trash) {
     const LINE = done ? LINE_THROUGH : "";
 
     const item = `<li class="item">
-                    <i type="button" class="far ${DONE}" job="complete" id="${id}"></i>
+                    <i class="far ${DONE}" job="complete" id="${id}"></i>
                     <p class="text ${LINE}">${toDo}</p>
-                    <i type="button" class="far fa-trash-alt" job="delete" id="${id}"></i>
+                    <i class="far fa-trash-alt" job="delete" id="${id}"></i>
                   </li>`;
 
     const position = "beforeend";
