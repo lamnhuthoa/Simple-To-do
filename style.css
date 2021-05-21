@@ -198,7 +198,11 @@ header .header__container .clear i {
     z-index: 1;
   }
 
-  .welcome {
+  .welcome{
+    display: none;
+  }
+
+  /* .welcome {
     z-index: 999;
     text-align: left;
     width: 22rem;
@@ -220,5 +224,5 @@ header .header__container .clear i {
     font-size: 0.9rem;
     line-height: 1.5rem;
     font-weight: 500;
-  }
+  } */
 }
