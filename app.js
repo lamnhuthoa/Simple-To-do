@@ -9,10 +9,6 @@ function hideText() {
     document.getElementById("welcome").classList.add('d-none');
 }
 
-function showText() {
-    document.getElementById("welcome").classList.remove('d-none');
-}
-
 //Classes name
 const CHECK = "fa-check-circle";
 const UNCHECK = "fa-circle";
