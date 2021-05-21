@@ -128,6 +128,10 @@ header .header__container .clear i {
   color: green;
 }
 
+.content ul li .fa-circle:focus {
+  color: #000;
+}
+
 .content ul li .fa-check-circle {
   font-size: 1.5rem;
   color: green;
