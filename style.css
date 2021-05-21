@@ -129,7 +129,7 @@ header .header__container .clear i {
 }
 
 .content ul li .fa-circle:focus {
-  color: #000;
+  color: #000 !important;
 }
 
 .content ul li .fa-check-circle {
@@ -146,7 +146,7 @@ header .header__container .clear i {
 }
 
 .content ul li .fa-check-circle:focus{
-  color: green;
+  color: green !important;
 }
 
 .content ul li .fa-trash-alt {
