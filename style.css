@@ -45,15 +45,13 @@ body {
 }
 
 .container {
-  max-width: 25rem;
+  width: 25rem;
   height: 40rem;
   margin: 0 auto;
   border-radius: 1rem;
   box-shadow: 0 0.9rem 2rem 0.8rem rgba(0, 0, 0, 0.35);
   background: #fff;
   padding: 0;
-  border: none;
-  outline: none;
   overflow: hidden;
   position: absolute;
   top: 50%;
@@ -283,5 +281,13 @@ header .header__container .clear i {
   .instruction-text{
     font-size: 1rem;
     margin-left: 4rem;
+  }
+
+  .container {
+    max-width: 20rem;
+  }
+
+  .add-to-do{
+    max-width: 20rem;
   }
 }
