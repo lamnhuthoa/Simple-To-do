@@ -78,7 +78,7 @@ document.getElementById('addToDo').onclick = function () {
             trash: false
         });
 
-        localStorage.setItem("TODO", JSON.stringify(LIST));
+        // localStorage.setItem("TODO", JSON.stringify(LIST));
 
         id++;
     }
