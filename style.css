@@ -120,6 +120,8 @@ header .header__container .clear i {
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.4s ease;
+  outline: none;
+  border: none;
 }
 
 .content ul li .fa-circle:hover {
@@ -131,6 +133,8 @@ header .header__container .clear i {
   color: green;
   cursor: pointer;
   transition: all 0.4s ease;
+  border: none;
+  outline: none;
 }
 
 .content ul li .fa-check-circle:hover {
@@ -141,6 +145,8 @@ header .header__container .clear i {
   font-size: 1.5rem;
   cursor: pointer;
   transition: all 0.4s ease;
+  border: none;
+  outline: none;
 }
 
 .content ul li .fa-trash-alt:hover {
@@ -168,6 +174,8 @@ header .header__container .clear i {
   line-height: 30px;
   text-align: center;
   cursor: pointer;
+  border: none;
+  outline: none;
 }
 
 .add-to-do input {
@@ -181,16 +189,36 @@ header .header__container .clear i {
   overflow: hidden;
 }
 
-
 @media screen and (min-width: 350px) and (max-width: 992px) {
   .container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
   }
 
-  .welcome{
-    display: none;
+  .welcome {
+    z-index: 999;
+    text-align: left;
+    width: 22rem;
+    position: absolute;
+    top: 12rem;
+    left: 3.5rem;
+    margin-left: 3rem;
+  }
+  
+  .welcome p:first-child {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    font-weight: 700;
+  }
+  
+  .welcome p:last-child {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    font-weight: 500;
   }
 }
